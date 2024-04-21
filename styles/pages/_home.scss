@@ -279,13 +279,16 @@
   &__detail {
       position: absolute;
       left: 0; top: 0;
-      width: 100%; height: 100%;
+      width: 100%; height: 550px;
       background: rgba(100, 100, 100, .8);
-      z-index: 2147483647;
-      display: none;
+      z-index: -2;
+      opacity: 0 ;
+      transition: opacity ease 0.5s;
 
       &.inview {
-        display: block;
+        z-index: 5;
+        opacity: 1;
+        transition: opacity ease 0.3s;
       }
   }
 
@@ -293,18 +296,13 @@
     height: 200px;
     width: 300px;
     background: $cWhite;
-    margin-top: 100px;
+    margin-top: 150px;
     margin-left: auto;
     margin-right: auto;
-    opacity: 0;
 
     @include mq(lg) {
       height: 250px;
       width: 1000px;
-    }
-
-    &.inview {
-      opacity: 1;
     }
   }
 
@@ -313,11 +311,6 @@
     position: relative;
     width: 30px;
     height: 30px;
-    opacity: 0;
-
-    &.inview {
-      opacity: 1;
-    }
   }
   
   .batsu::before, .batsu::after {
@@ -340,13 +333,8 @@
 
   &__Article {
     text-align: center;
-    padding: 30px;
+    padding: 18px;
     font-size: large;
-    opacity: 0;
-
-    &.inview {
-      opacity: 1;
-    }
   }
 }
 
@@ -386,6 +374,134 @@
       margin-bottom: 30px;
     }
   }
+
+  &__1{
+      position: absolute;
+      left: 0; top: 1150px;
+      width: 100%; height: 2100px;
+      background: rgba(100, 100, 100, .8);
+      z-index: -2;
+      opacity: 0 ;
+      transition: opacity ease 0.5s;
+
+      &.inview {
+        z-index: 5;
+        opacity: 1;
+        transition: opacity ease 0.3s;
+      }
+    }
+    &__container {
+      height: 80px;
+      width: 300px;
+      background: $cWhite;
+      margin-left: auto;
+      margin-right: auto;
+
+      @include mq(lg) {
+        width: 500px;
+      }
+    }
+    &__Article {
+      text-align: center;
+      padding: 18px;
+      font-size: large;
+    }
+
+    &__2{
+      position: absolute;
+      left: 0; top: 1630px;
+      width: 100%; height: 1620px;
+      background: rgba(100, 100, 100, .8);
+      z-index: -2;
+      opacity: 0 ;
+      transition: opacity ease 0.5s;
+
+      &.inview {
+        z-index: 5;
+        opacity: 1;
+        transition: opacity ease 0.3s;
+      }
+    }
+    &__container {
+      height: 80px;
+      width: 300px;
+      background: $cWhite;
+      margin-left: auto;
+      margin-right: auto;
+
+      @include mq(lg) {
+        width: 500px;
+      }
+    }
+    &__Article {
+      text-align: center;
+      padding: 18px;
+      font-size: large;
+    }
+
+    &__3{
+      position: absolute;
+      left: 0; top: 2080px;
+      width: 100%; height: 1140px;
+      background: rgba(100, 100, 100, .8);
+      z-index: -2;
+      opacity: 0 ;
+      transition: opacity ease 0.5s;
+
+      &.inview {
+        z-index: 5;
+        opacity: 1;
+        transition: opacity ease 0.3s;
+      }
+    }
+    &__container {
+      height: 80px;
+      width: 300px;
+      background: $cWhite;
+      margin-left: auto;
+      margin-right: auto;
+
+      @include mq(lg) {
+        width: 500px;
+      }
+    }
+    &__Article {
+      text-align: center;
+      padding: 18px;
+      font-size: large;
+    }
+
+    &__4{
+      position: absolute;
+      left: 0; top: 2500px;
+      width: 100%; height: 2660px;
+      background: rgba(100, 100, 100, .8);
+      z-index: -2;
+      opacity: 0 ;
+      transition: opacity ease 0.5s;
+
+      &.inview {
+        z-index: 5;
+        opacity: 1;
+        transition: opacity ease 0.3s;
+      }
+    }
+    &__container {
+      height: 100px;
+      width: 800px;
+      background: $cWhite;
+      margin-left: auto;
+      margin-right: auto;
+
+      @include mq(lg) {
+        width: 800px;
+      }
+    }
+    &__Article {
+      text-align: center;
+      padding: 18px;
+      font-size: large;
+    }
 
   &__btn {
     text-align: center;
