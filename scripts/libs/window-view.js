@@ -75,9 +75,9 @@ c4UnBtn.addEventListener('click',function() {
 })
 
 
-//btn
-const btnCs = document.getElementById('btn')[0];
+// btn
+// const btnCs = document.getElementById('btn')[0];
 
-c4UnBtn.addEventListener('click',function() {
-  btnCs.textContent = 'Coming soon...'
-})
+// c4UnBtn.addEventListener('click',function() {
+//   btnCs.textContent = 'Coming soon...'
+// })
