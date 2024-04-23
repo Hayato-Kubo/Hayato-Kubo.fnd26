@@ -377,7 +377,7 @@
 
   &__1{
       position: absolute;
-      left: 0; top: 1150px;
+      left: 0; top: auto;
       width: 100%; height: 2100px;
       background: rgba(100, 100, 100, .8);
       z-index: -2;
@@ -391,8 +391,8 @@
       }
     }
     &__container {
-      height: 80px;
-      width: 300px;
+      height: auto;
+      width: auto;
       background: $cWhite;
       margin-left: auto;
       margin-right: auto;
@@ -404,12 +404,16 @@
     &__Article {
       text-align: center;
       padding: 18px;
-      font-size: large;
+      font-size: small;
+
+      @include mq(lg) {
+        font-size: large;
+      }
     }
 
     &__2{
       position: absolute;
-      left: 0; top: 1630px;
+      left: 0; top: auto;
       width: 100%; height: 1620px;
       background: rgba(100, 100, 100, .8);
       z-index: -2;
@@ -423,8 +427,8 @@
       }
     }
     &__container {
-      height: 80px;
-      width: 300px;
+      height: auto;
+      width: auto;
       background: $cWhite;
       margin-left: auto;
       margin-right: auto;
@@ -436,12 +440,16 @@
     &__Article {
       text-align: center;
       padding: 18px;
-      font-size: large;
+      font-size: small;
+
+      @include mq(lg) {
+        font-size: large;
+      }
     }
 
     &__3{
       position: absolute;
-      left: 0; top: 2080px;
+      left: 0; top: auto;
       width: 100%; height: 1140px;
       background: rgba(100, 100, 100, .8);
       z-index: -2;
@@ -455,8 +463,8 @@
       }
     }
     &__container {
-      height: 80px;
-      width: 300px;
+      height: auto;
+      width: auto;
       background: $cWhite;
       margin-left: auto;
       margin-right: auto;
@@ -468,12 +476,16 @@
     &__Article {
       text-align: center;
       padding: 18px;
-      font-size: large;
+      font-size: small;
+
+      @include mq(lg) {
+        font-size: large;
+      }
     }
 
     &__4{
       position: absolute;
-      left: 0; top: 2500px;
+      left: 0; top: auto;
       width: 100%; height: 720px;
       background: rgba(100, 100, 100, .8);
       z-index: -2;
@@ -487,20 +499,24 @@
       }
     }
     &__container {
-      height: 100px;
-      width: 800px;
+      height: auto;
+      width: auto;
       background: $cWhite;
       margin-left: auto;
       margin-right: auto;
 
       @include mq(lg) {
-        width: 800px;
+        width: 500px;
       }
     }
     &__Article {
       text-align: center;
       padding: 18px;
-      font-size: large;
+      font-size: small;
+
+      @include mq(lg) {
+        font-size: large;
+      }
     }
 
   &__btn {
@@ -701,3 +717,4 @@
     background-image: url(../images/Ig.svg);
   }
 }
+
